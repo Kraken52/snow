@@ -125,10 +125,10 @@ function isEqual(val1,val2){
   return val1.isEqualNode(val2);
 }
 
-function addEvent(name,func,bool,node){
+function addEvent(name,func,bool=false,node=document){
   node.addEventListener(name,func,bool);
 }
 
-function removeEvent(name,func,bool,node){
+function removeEvent(name,func,bool=false,node=document){
   node.removeEventListener(name,func,bool);
 }
